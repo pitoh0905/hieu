@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+.container{
+    width: 1000px;
+    margin: 20px auto;
+    border-style:dashed;
+    border-width: 5px;
+    background-image: url('back2.jpg');
+    background-size: cover;
+    border-radius: 10%;
+    overflow: hidden;
+    border-color: rgb(22, 19, 1);
+}
+.nameweb{
+    background-color: rgb(126, 84, 119);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.banner h1{
+    text-align: center;
+    color: rgb(213, 208, 46);
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+.intro{
+    display: flex;
+    padding: 20px;
+}
+.intro-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.intro .contact-information ul{
+    list-style-type: none;
+}
+.intro .contact-information ul li{
+    margin-bottom: 10px;
+    font-size: 24px;
+    color:  rgb(142, 20, 133);
+}
+main{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.social-media {
+    width: 300px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.infor-game {
+    width: 300px;
+    margin-right: 100px;
+    padding: 20px;
+}
+.social-media ul, .infor-game ul{
+    list-style-type: none;
+}
+.social-media h1{
+    margin-bottom: 20px;
+    color: rgb(213, 208, 46);
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 400px;
+} 
+.infor-game h1{
+    margin-bottom: 20px;
+    color: rgb(213, 208, 46);
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 400px;
+}
+.social-media ul li a{ 
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(142, 20, 133);
+}
+.infor-game ul li{
+    color:  rgb(142, 20, 133);
+    font-size: 20px;
+    width: 400px;
+}
+.social-media ul li img{
+    margin-bottom: 10px;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 100%;
+}
+.infor-game ul li img{
+    margin-bottom: 10px;
+    vertical-align: middle;
+    padding: 10px;
+    width: 70px;
+    border-radius: 100%;
+}
