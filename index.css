@@ -7,24 +7,25 @@
 /* My Web */
 .header{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     margin: 10px;
 }
 .header h1{
     color:brown;
-    font-family:'Courier New';
-    padding: 20px;
-    margin-left: 80px;
-    font-size: 50px;
+    font-family: Impact, sans-serif;
+    padding: 10px;
+    font-size: clamp(28px, 6vw, 50px);
+    margin-left: 150px;
 }
 /* mau nen */
 .background_color{
     padding: 10px;
-    margin-right: 90px;
+    margin-right: 150px;
 }
 .box{
     display: flex;
-    
     border: 1px black solid;
     border-radius: 50px;
     background-color: brown;
@@ -49,7 +50,9 @@
     justify-content: center;
 }
 .avatar img{
-    height: 400px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
     background-size: cover;
     margin-top: 20px;
     border-radius: 10px ;
@@ -59,21 +62,24 @@
     padding: 20px;
 }
 .social ul li i{
-    color: black;
+    color: rgb(172, 182, 232);
 }
 
 /* main */
 .main{
     display: flex;
-    margin: auto 100px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
     justify-content: center;
+    align-items: flex-start;
     border-radius: 20px;
     background-image: url('bg_main_three.jpg');
     background-size: cover;
     background-position: 20% 62%;
     background-repeat: no-repeat;
-    object-fit: cover;
-    gap: 150px;
+    gap: 40px;
 }
 
 /* thong tin ben phai */
@@ -84,25 +90,25 @@
     margin-top: 20px;
 }
 .infor h1{
-    color: rgb(28, 42, 122);
+    color: rgb(172, 182, 232);
     font-family:'Courier New';
     padding-bottom: 20px;
 }
 .infor table tr td{
     padding: 8px;
-    color: rgb(28, 42, 122);
+    color: rgb(172, 182, 232);
 }
 .infor table tr th{
     text-align: left;
     font-size: 23px;
-    color: rgb(111, 131, 220);
+    color: rgb(205, 208, 223);
     font-family:'Courier New';
 }
 .games{
     margin-top:20px ;
 }
 .games h1{
-    color: rgb(28, 42, 122);
+    color: rgb(172, 182, 232);
     font-family:'Courier New';
 }
 .games ul{
@@ -112,7 +118,7 @@
 }
 .games ul li{
     padding: 20px;
-    color: rgb(111, 131, 220);
+    color: rgb(205, 208, 223);
     font-family:'Courier New';
     font-size: 20px;
     font-weight: bold;
@@ -120,4 +126,59 @@
 .games ul li img{
     height: 100px;
     border-radius: 100%;
+}
+
+/* Responsive cho tablet/điện thoại */
+@media (max-width: 768px) {
+    .header{
+        justify-content: center;
+        text-align: center;
+    }
+    .header h1{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .background_color{
+        margin-right: 0;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 20px;
+    }
+    .ava_social, .infor_right{
+        width: 100%;
+        max-width: 400px;
+    }
+    .avatar img{
+        max-width: 100%;
+    }
+    .infor table tr th{
+        font-size: 18px;
+    }
+    .infor h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .games h1{
+        text-align: center;
+    }
+    .games ul{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .component{
+        padding: 15px;
+        margin: 4px;
+    }
+    .infor table tr th{
+        font-size: 15px;
+    }
+    .infor table tr td{
+        padding: 6px;
+    }
 }
