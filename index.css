@@ -17,12 +17,10 @@
     font-family: Impact, sans-serif;
     padding: 10px;
     font-size: clamp(28px, 6vw, 50px);
-    margin-left: 150px;
 }
 /* mau nen */
 .background_color{
     padding: 10px;
-    margin-right: 150px;
 }
 .box{
     display: flex;
@@ -114,22 +112,21 @@
 .games ul{
     display: flex;
     list-style-type: none;
-    justify-content: center;
 }
 .games ul li{
-    padding: 20px;
+    padding: 10px;
     color: rgb(205, 208, 223);
     font-family:'Courier New';
     font-size: 20px;
     font-weight: bold;
 }
 .games ul li img{
-    height: 100px;
+    height: 60px;
     border-radius: 100%;
 }
 
 /* Responsive cho tablet/điện thoại */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .header{
         justify-content: center;
         text-align: center;
@@ -170,7 +167,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     .component{
         padding: 15px;
         margin: 4px;
