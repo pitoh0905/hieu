@@ -5,52 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HieuWeb</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+<script>
+    function mouseOver(color){
+        document.body.style.backgroundColor = color;
+    }
+</script>
 <body>
     <div class="container">
-        <header>
-            <div class="nameweb">
-                <h1>😸 WELLCOME TO MY WEBSITE 😸</h1>
+        <div class="header">
+            <h1>My Web</h1>
+            <div class="background_color">
+                <div class="box">
+                    <div class="component" id="black" onclick="mouseOver('black')"></div>
+                    <div class="component" id="white" onclick="mouseOver('white')"></div>
+                </div>
             </div>
-        </header>
-        <div class="banner">
-            <h1> 😽 MY INFORMATION 😽 </h1>
         </div>
-        <section class="intro">
-            <div class="intro-image">
-                <img src="avatar.jpg" alt="Profile Picture">
+        <div class="main">
+            <div class="ava_social">
+                <div class="avatar">
+                    <img src="avatar.jpg" alt="avatar">
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/hieu.230905"><i class="fa-brands fa-square-facebook fa-3x fa-fw"></i></a></li>
+                        <li><a href="https://www.instagram.com/_nthieu.5_/"><i class="fa-brands fa-square-instagram fa-3x fa-fw"></i></a></li>
+                        <li><a href="https://www.youtube.com/@Abcdxyz-wo3tx"><i class="fa-brands fa-square-youtube fa-3x fa-fw"></i></a></li>
+                        <li><a href="https://x.com/petternguyen05"><i class="fa-brands fa-square-x-twitter fa-3x fa-fw"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="contact-information">
-                <ul>
-                    <li>🧑 Nguyễn Trung Hiếu</li>
-                    <li>👩‍🦱 Peter Nguyen</li>
-                    <li>📞 0354115596</li>
-                    <li>✉️ nthieuz0905@gmail.com</li>
-                    <li>📍 Ha Noi, Vietnam</li>
-                    <li>📚 Software Engineering</li>
-                    <li>🏫 School Information and Communications Technology - HaUI</li>
-                </ul>
+            <div class="infor_right">
+                <div class="infor">
+                    <h1>SoftWare Engineer - SICT - HaUI</h1>
+                    <table>
+                        <tr>
+                            <td><i class="fa-solid fa-circle-user fa-1x"></i></td>
+                            <th>Nguyễn Trung Hiếu</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-cake-candles fa-1x"></i></td>
+                            <th>23-09-2005</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-phone fa-1x"></i></td>
+                            <th>0354 115 496</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-house fa-1x"></i></td>
+                            <th>Nhổn, P.Tây Tựu, Q.Bắc Từ Liêm, TP.Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-envelope fa-1x"></i></td>
+                            <th>nthieuz0905@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="games">
+                    <h1>GAMES</h1>
+                    <ul>
+                        <li><img src="logo_riot.jpg" alt="Riot Games"> <br>ID: GGs pitoH #2104 </li>
+                        <li><img src="logo_steam.jpg" alt="Steam"> <br>Code: 1839457196</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        <main>
-            <div class="social-media">
-                <h1>🔎 SOCIAL MEDIA</h1>
-                <ul>
-                    <li><img src="logo_face.png" alt="Facebook"><a href="https://www.facebook.com/hieu.230905">Facebook</a></li>
-                    <li><img src="logo_inta.png" alt="Instagram"><a href="https://www.instagram.com/_nthieu.5_/">Instagram</a></li>
-                    <li><img src="logo_youtube.png" alt="YouTube"><a href="https://www.youtube.com/@Abcdxyz-wo3tx">YouTube</a></li>
-                    <li><img src="logo_twitter.png" alt="Twitter"><a href="https://x.com/petternguyen05">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="infor-game">
-                <h1>🎮 MY GAMES</h1>
-                <ul>
-                    <li><img src="logo_riot.jpg" alt="Riot Games">ID Riot: GGs pitoH #2104</li>
-                    <li><img src="logo_steam.jpg" alt="Steam">Code Steam: 1839457196</li>
-                </ul>
-            </div>
-        </main>
-
+        </div>
     </div>
 </body>
 </html>
